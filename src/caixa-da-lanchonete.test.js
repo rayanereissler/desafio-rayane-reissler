@@ -20,6 +20,7 @@ describe('CaixaDaLanchonete', () => {
         ['dinheiro', 'R$ 2,85', ['cafe,1']],
         ['credito', 'R$ 3,09', ['cafe,1']],
         ['debito', 'R$ 3,00', ['cafe,1']],
+        ['pix', 'Forma de pagamento inválida!', ['cafe,1']],
     ])('compra simples em %p deve resultar em %p', validaTeste);
 
     test.each([
